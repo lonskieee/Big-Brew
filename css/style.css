@@ -352,7 +352,61 @@ img {
     gap: 20px;
     margin: 20px 0;
     align-items: center;
-    margin-left: 540px;
+}
+
+.contact-section .contact-info-list .contact-info i {
+    font-size: 1.2rem;
+}
+
+.contact-section .section-content {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 60px;
+    justify-content: center;
+}
+
+.contact-section .contact-form .form-input {
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    outline: none;
+    margin-bottom: 16px;
+    background: #ffd6aa;
+    border-radius: 10px;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+.contact-section .contact-form .form-input:focus {
+    border: 1.6px solid black;
+}
+
+.contact-section .contact-form textarea.form-input {
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.contact-section .contact-form .submit-button {
+    padding: 10px 26px;
+    color: white;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #542c00;
+    border: 1.6px solid #542c00;
+    border-radius: 30px;
+    transition: .3s ease;
+}
+
+.contact-section .contact-form .submit-button:hover {
+    color: #542c00;
+    background: transparent;
+}
+
+.contact-section .contact-form {
+    max-width: 50%;
 }
 
 /* Feeter */
@@ -408,11 +462,7 @@ img {
     .ctn {
         margin: 10px;
         margin-left: 430px;
-    }
-
-    .contact-section .contact-info-list .contact-info {
-        margin-left: 330px;
-    }
+    } 
 }
 
 /* Media Queeeeries Shesh */
@@ -421,10 +471,6 @@ img {
         display: block;
         font-size: 1.2rem;
     }  
-
-    .contact-section .contact-info-list .contact-info {
-        margin-left: 230px;
-    }
 
     .ctn {
         margin: 10px;
@@ -488,7 +534,7 @@ img {
         margin: 0;
     }
 
-    .hero-sec .hero-det :is(.sub-title, .descrip), .BB .about-details {
+    .hero-sec .hero-det :is(.sub-title, .descrip), .BB .about-details, .contact-section .contact-form {
         max-width: 100%;
     }
 
@@ -529,6 +575,13 @@ img {
     .gallery-section .gallery-list .gallery-item {
         width: calc(100% / 3 - 30px);
     }
+
+
+    .contact-section .section-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+    }
 }
 
 /* SHESHHHH */
@@ -560,10 +613,6 @@ img {
         margin-left: 5px;
     }
 
-    .contact-section .contact-info-list .contact-info {
-        margin-left: 25px;
-    }
-
     .hero-sec .section-content {
         margin: 0;
     }
@@ -585,5 +634,4 @@ img {
         font-weight: bolder;
         text-shadow: -9px 4px 8px rgba(0, 0, 0, 0.729);
     }
-
 }
