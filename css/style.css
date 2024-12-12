@@ -449,7 +449,7 @@ img {
     color: white;
 }
 
-/* Media SHESH*/
+/* Media SHESH, for big screen pero not sure sir if pasado or need pelang izoom*/
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
         gap: 60px;
@@ -463,9 +463,21 @@ img {
         margin: 10px;
         margin-left: 430px;
     } 
+
+    .hero-sec .section-content {
+        margin: 0;
+    }
+
+    .contact-section .section-content {
+        margin: 0;
+    }
+
+    .menu-section .section-content {
+        margin: 0;
+    }
 }
 
-/* Media Queeeeries Shesh */
+/* Media Queeeeries Shesh for normal laptops screen*/
 @media screen and (max-width: 900px) {
     .navbar :where(#menu-close-button, #menu-open-button) {
         display: block;
@@ -584,7 +596,7 @@ img {
     }
 }
 
-/* SHESHHHH */
+/* SHESHHHH for mobiles specifically Galaxy Samsung S20 Ultra*/
 @media screen and (max-width: 640px) {
     .menu-section .menu-list .menu-item, .gallery-section .gallery-list .gallery-item {
         width: 100%;
