@@ -354,6 +354,13 @@ img {
     align-items: center;
 }
 
+.contact-section .contact-info-list .contact-info a {
+    color: black;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
 .contact-section .contact-info-list .contact-info i {
     font-size: 1.2rem;
 }
