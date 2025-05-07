@@ -54,7 +54,7 @@
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
-    box-shadow: 1px 3px 20px #ffffff;
+    box-shadow: 1px 3px 20px #ffffffd6;
     border-radius: 70px;
     font-size: 23px;
     font-weight: 900;
@@ -65,7 +65,7 @@
     background-color: #61240083;
     padding: 10px;
     border-radius: 25px;
-    box-shadow: 1px 3px 35px rgb(255, 255, 255);
+    box-shadow: 4px 4px 11px rgba(255, 255, 255, 0.703);
     margin-bottom: 35px;
 }
 
@@ -93,7 +93,8 @@ html {
     text-decoration: none;
     font-weight: 400;
     transition: .2s ease;
-    margin-left: 590px;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .ctn-2 {
@@ -351,11 +352,6 @@ img {
     gap: 110px;
     align-items: center;
     justify-content: space-between;
-    margin-left: 90px;
-}
-
-.menu-section .section-content .section-title {
-    margin-left: 90px;
 }
 
 .menu-section .menu-list .menu-item {
