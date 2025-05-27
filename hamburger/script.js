@@ -43,3 +43,23 @@ $(document).ready(function () {
         });
     });
 });
+
+
+// For Image Modal
+$(document).ready(function() {
+    $(".gallery-img").on("click", function() {
+        var src = $(this).attr("src");
+        var caption = $(this).data("caption");
+        $("#modal-img").attr("src", src);
+        $("#modal-caption").text(caption);
+        $("#image-modal").fadeIn();
+    });
+
+    $(".modal-close, .modal").on("click", function(e) {
+        // Only close if background or close button is clicked
+        if ($(e.target).is(".modal-close") || $(e.target).is(".modal")) {
+            $("#image-modal").fadeOut();
+        }
+    });
+});
+
