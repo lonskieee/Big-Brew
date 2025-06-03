@@ -12,6 +12,43 @@
     position: relative;
 }
 
+.social-list-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 120px;
+}
+
+.social-link:hover {
+    background-color: #8a2c00d0;
+}
+
+/* Responsive: stack links vertically on narrow screens */
+@media (max-width: 600px) {
+    .social-list-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-link {
+        width: 80%;
+    }
+}
+
+
 .navbar .dropdown-menu {
     display: none;
     position: absolute;
@@ -635,6 +672,10 @@ img {
 .footer-section .policy-text .policy-link {
     margin: 0 5px;
     color: white;
+}
+
+.form-input {
+    padding-right: 2.5em; /* Space for the eye icon */
 }
 
 .footer-section :where(.copyright-text, .social-link, .policy-link) {
